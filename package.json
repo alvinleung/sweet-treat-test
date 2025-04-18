@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "node make-images-manifest public/ data/ && npx next dev",
-    "build": "npx next build",
+    "build": "node make-images-manifest public/ data/ && npx next build",
     "start": "next start",
     "lint": "next lint"
   },
